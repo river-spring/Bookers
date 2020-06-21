@@ -14,13 +14,13 @@
 </ul>
 <% end %>
 
-<%= form_for @book, url: booker_path do |f| %>
+<%= form_for @book, url: book_path do |f| %>
 <h4>title</h4>
 <%= f.text_field :title %>
 <h4>body</h4>
 <%= f.text_area :body %>
 <%= f.submit 'Update Book' %>
 <% end %>
-<%= link_to "Show", booker_path(@book.id) %>
+<%= link_to "Show", book_path(@book.id) %>
  | 
-<%= link_to "Back", bookers_path %>
+<%= link_to "Back", books_path %>
